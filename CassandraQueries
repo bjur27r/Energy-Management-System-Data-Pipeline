@@ -1,0 +1,63 @@
+Desde Zeppelin
+
+Creación Espacio
+%cassandra
+CREATE KEYSPACE EM WITH replication = {'class': 'SimpleStrategy','replication_factor':1};
+
+Creacion Tablas
+
+Historico Estados
+%cassandra
+CREATE TABLE em.stream_hh_C(
+    inst text,
+    eventTime timestamp,
+    eventHour text,
+    generated float,
+    consumed float,
+    PRIMARY KEY(inst,eventTime,eventHour)
+    
+    )WITH CLUSTERING ORDER BY (eventTime DESC);
+
+
+
+Instación Forward 24H
+%cassandra
+CREATE TABLE em.inst_frwd(
+    inst text,
+    hour double,
+    gen double,
+    consm double,
+    bat_acc double,
+    excess double,
+    bat double,
+    pool double,
+    PRIMARY KEY(inst,hour)
+    
+    )WITH CLUSTERING ORDER BY (hour DESC);
+
+
+Modelos de Consumo
+%cassandra
+CREATE TABLE em.models_cons (
+  inst TEXT,
+  tip TEXT,
+  model BLOB,
+
+  PRIMARY KEY (inst)
+);
+
+
+Consulta
+
+%cassandra
+select * from EM.stream_HH_c;
+
+%cassandra
+select * from em.inst_frwd;
+
+%cassandra
+select * from em.models_cons;
+
+
+
+
