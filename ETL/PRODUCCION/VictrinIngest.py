@@ -11,7 +11,7 @@ def date_u(x):
     return date_2
 
 
-api = VRM_API(username="aureqc@iracesa.com", password="070488Aure")
+api = VRM_API(username="xxxxxxxxxxxxxm", password="xxxxxxxxxxxxxre")
 
 stats = api.get_custom_stats(17210)
 records = stats['records']
