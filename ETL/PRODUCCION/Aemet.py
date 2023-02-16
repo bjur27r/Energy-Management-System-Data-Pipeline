@@ -7,11 +7,11 @@ from datetime import datetime
 id_2 = "06006"
 url = "https://opendata.aemet.es/opendata/api/prediccion/especifica/municipio/horaria/" + str(id_2)
 
-"https://opendata.aemet.es/opendata/api/prediccion/especifica/municipio/horaria/06006/?/?api_key=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJianVyMjdyQGdtYWlsLmNvbSIsImp0aSI6IjlkZTBlNGYyLTU4MWItNGNhZC1hNzg0LTUzMzkyZWYwNDA0OCIsImlzcyI6IkFFTUVUIiwiaWF0IjoxNTE5ODkxNjQ3LCJ1c2VySWQiOiI5ZGUwZTRmMi01ODFiLTRjYWQtYTc4NC01MzM5MmVmMDQwNDgiLCJyb2xlIjoiIn0.Js4vLF861ioKCIZnDESNcxxIL47Vwkx6uhl8H5RRm5o"
-/opendata/api/valores/climatologicos/inventarioestaciones/todasestaciones/?api_key=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJianVyMjdyQGdtYWlsLmNvbSIsImp0aSI6IjlkZTBlNGYyLTU4MWItNGNhZC1hNzg0LTUzMzkyZWYwNDA0OCIsImlzcyI6IkFFTUVUIiwiaWF0IjoxNTE5ODkxNjQ3LCJ1c2VySWQiOiI5ZGUwZTRmMi01ODFiLTRjYWQtYTc4NC01MzM5MmVmMDQwNDgiLCJyb2xlIjoiIn0.Js4vLF861ioKCIZnDESNcxxIL47Vwkx6uhl8H5RRm5o HTTP/1.1
+"https://opendata.aemet.es/opendata/api/prediccion/especifica/municipio/horaria/06006/?/?api_key=xxxxxxxxxxxxxxxx"
+/opendata/api/valores/climatologicos/inventarioestaciones/todasestaciones/?api_key=xxxxxxxxxxxxxxxxx HTTP/1.1
 
 querystring = {
-    "api_key": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJianVyMjdyQGdtYWlsLmNvbSIsImp0aSI6IjlkZTBlNGYyLTU4MWItNGNhZC1hNzg0LTUzMzkyZWYwNDA0OCIsImlzcyI6IkFFTUVUIiwiaWF0IjoxNTE5ODkxNjQ3LCJ1c2VySWQiOiI5ZGUwZTRmMi01ODFiLTRjYWQtYTc4NC01MzM5MmVmMDQwNDgiLCJyb2xlIjoiIn0.Js4vLF861ioKCIZnDESNcxxIL47Vwkx6uhl8H5RRm5o"}
+    "api_key": "xxxxxxxo"}
 headers = {
     'cache-control': "no-cache"
 }
